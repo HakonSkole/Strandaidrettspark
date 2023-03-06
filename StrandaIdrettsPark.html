@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Strandaidrettspark</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Stil for banneren */
+        .banner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('Bilder/Strandaidrettspark.png');
+            background-size: cover;
+            height: 200px;
+        }
+
+        .banner h1 {
+            color: #fff;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        /* Stiler for bildesamlingen */
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .image-gallery img {
+            max-width: 100%;
+            width: 300px;
+            margin: 20px;
+            box-shadow: 2px 2px #888888;
+            transition: all 0.3s ease-out;
+            /* Legg til overgang på alle egenskaper */
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.1);
+            /* Skaler opp ved musepeker over */
+            box-shadow: 4px 4px #888888;
+            /* Endre skygge ved musepeker over */
+        }
+
+        /* Stiler for video seksjonen */
+        .video-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .video-section iframe {
+            max-width: 100%;
+            width: 500px;
+            height: 300px;
+        }
+
+        /* Stiler for kontaktdelen */
+        .contact-section {
+            background-color: #F5F5F5;
+            padding: 50px;
+            margin-top: 50px;
+        }
+
+        .contact-section h3 {
+            margin-bottom: 20px;
+            color: #333333;
+        }
+
+        .contact-section p {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #555555;
+        }
+
+        .contact-section a {
+            text-decoration: none;
+            color: #0066CC;
+        }
+
+        /* Fargevalg */
+        :root {
+            --primary-color: #6D4C41;
+            --secondary-color: #EFEBE9;
+            --tertiary-color: #BDBDBD;
+        }
+
+        body {
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            zoom: 80%;
+            /* Zoom inn nettsiden til 80% */
+        }
+
+
+        .image-gallery img {
+            border: 5px solid var(--tertiary-color);
+        }
+
+        .video-section iframe {
+            border: 5px solid var(--tertiary-color);
+        }
+
+        .contact-section {
+            border: 5px solid var(--tertiary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Banner -->
+    <div class="banner">
+        <!-- Skulle skrive noe her, men jeg glømte hva. -->
+    </div>
+
+    <!-- Bildesamling -->
+    <div class="image-gallery">
+        <img src="Bilder/Fast.JPG" alt="Bilde 1">
+        <img src="Bilder/Strong.JPG" alt="Bilde 2">
+        <img src="Bilder/TwoHands.JPG" alt="Bilde 3">
+        <img src="Bilder/Leon.JPG" alt="Bilde 4">    <!-- Jeg glemte å ta bilde av meg som brukte den maskinen, så derfor Er det venenn min Leon på bildet. "Jeg spørte om tilatelse". -->
+    </div>
+
+    <!-- Video seksjon -->
+    <div class="video-section">
+        <iframe src="https://www.youtube.com/embed/bndEWU4a6tE" title="MVI 3045"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/6jgk9PLueZo" title="MVI 3064"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+
+
+    <!-- Kontaktdel -->
+    <div class="contact-section">
+        <h3>Kontaktinformasjon</h3>
+        <p>Adresse: 1772 Halden</p>
+        <p>Telefon: +47 69 17 45 00</p>
+        <p>E-post: postmottak@halden.k</p>
+
+    </div>
+
+</body>
+
+</html>
